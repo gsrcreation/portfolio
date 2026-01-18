@@ -1,61 +1,89 @@
-# GSR — Personal Portfolio
+# Portfolio Website
 
-This is my personal portfolio website where I showcase my work, skills, and creative journey.
+This is my personal portfolio website, built completely by me using HTML, CSS, and JavaScript.
+The purpose of this project is to showcase my skills, projects, and background in a simple and clean way.
 
-The portfolio is designed with a clean dark theme, subtle animations, and a focus on visual storytelling. It reflects my interest in design, creativity, and my growing journey toward technology.
+The website is fully responsive and deployed using GitHub Pages.
 
----
+🔗 Live Demo:
+https://gsrcreation.github.io/portfolio/
 
-## 🚀 Live Website
-👉 https://gsrcreation.github.io/portfolio/
+About the Project
 
+This portfolio acts as a central place where anyone can:
 
+Learn about me
 
----
+View my skills and interests
 
-## ✨ Features
-- Clean and minimal dark UI
-- Glassmorphism-inspired elements
-- Smooth scroll-based animations
-- Interactive skill section with tooltips
-- Selected work showcase
-- “For More Work” section linked to Google Drive
-- Fully responsive design
+See my projects
 
----
+Contact me easily
 
-## 🛠️ Tech Stack
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- GitHub Pages (Hosting)
+I built this project to practice frontend fundamentals and to have a professional online presence for internships and opportunities.
 
----
+Technologies Used
 
-## 📂 Project Structure
+HTML5
+
+CSS3
+
+JavaScript
+
+GitHub Pages (for deployment)
+
+No frameworks or libraries were used. Everything is written from scratch to strengthen core concepts.
+
+Project Structure
 portfolio/
-│── index.html
-│── style.css
-│── script.js
-│── assets/
-│ ├── images
-│ └── icons
-│── README.md
+│
+├── index.html        # Main HTML file
+├── style.css         # Styling for the website
+├── script.js         # JavaScript for interactivity
+├── assets/           # Images and other assets
+└── README.md         # Project documentation
+
+Features
+
+Clean and minimal UI
+
+Responsive design for mobile and desktop
+
+Smooth scrolling and basic animations
+
+Sections for About, Skills, Projects, and Contact
+
+Live hosted portfolio using GitHub Pages
+
+How to Use / Run Locally
+
+Clone the repository
+
+git clone https://github.com/gsrcreation/portfolio.git
 
 
----
+Open the project folder
 
-## 📌 About Me
-I am a graphic designer with a strong interest in creativity, visual storytelling, and clean design systems.  
-Alongside design, I am learning technology step by step to expand my skills and build meaningful digital experiences.
+cd portfolio
 
----
 
-## 📎 More Work
-Additional works and experiments are available through my Google Drive folder linked inside the portfolio.
+Open index.html in your browser
+(No additional setup required)
 
----
+Future Improvements
 
+Add detailed project cards directly on the website
+
+Improve accessibility and SEO
+
+Add resume download option
+
+Enhance code readability and structure
+
+Author
+
+GSR
+GitHub: https://github.com/gsrcreation
 ## 📬 Contact
 You can connect with me through:
 - Instagram
