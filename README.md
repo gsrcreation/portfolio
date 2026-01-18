@@ -8,7 +8,7 @@ The website is fully responsive and deployed using GitHub Pages.
 🔗 Live Demo:
 https://gsrcreation.github.io/portfolio/
 
-About the Project
+## About the Project
 
 This portfolio acts as a central place where anyone can:
 
@@ -22,7 +22,7 @@ Contact me easily
 
 I built this project to practice frontend fundamentals and to have a professional online presence for internships and opportunities.
 
-Technologies Used
+## Technologies Used
 
 HTML5
 
@@ -34,7 +34,7 @@ GitHub Pages (for deployment)
 
 No frameworks or libraries were used. Everything is written from scratch to strengthen core concepts.
 
-Project Structure
+## Project Structure
 portfolio/
 │
 ├── index.html        # Main HTML file
@@ -43,7 +43,7 @@ portfolio/
 ├── assets/           # Images and other assets
 └── README.md         # Project documentation
 
-Features
+## Features
 
 Clean and minimal UI
 
@@ -55,7 +55,7 @@ Sections for About, Skills, Projects, and Contact
 
 Live hosted portfolio using GitHub Pages
 
-How to Use / Run Locally
+# How to Use / Run Locally
 
 Clone the repository
 
@@ -82,7 +82,7 @@ Enhance code readability and structure
 
 Author
 
-GSR
+GSR 
 GitHub: https://github.com/gsrcreation
 ## 📬 Contact
 You can connect with me through:
