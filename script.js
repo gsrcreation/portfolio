@@ -1,29 +1,3 @@
-window.onload = function () {
-    const logoBox = document.querySelector(".logo-box");
-    const textBox = document.querySelector(".text-box");
-  
-    if (!logoBox || !textBox) {
-      console.log("Elements not found");
-      return;
-    }
-  
-    // STEP 1: Logo zoom in (center)
-    setTimeout(() => {
-      logoBox.classList.add("logo-show");
-    }, 500);
-  
-    // STEP 2: Pause then move left
-    setTimeout(() => {
-      logoBox.classList.add("logo-left");
-    }, 2200);
-  
-    // STEP 3: Text comes from right
-    setTimeout(() => {
-      textBox.classList.add("text-show");
-    }, 3000);
-  };
-
-  
   window.onload = function () {
     const logoBox = document.querySelector(".logo-box");
     const paragraphs = document.querySelectorAll(".text-box p");

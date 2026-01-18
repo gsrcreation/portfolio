@@ -43,7 +43,7 @@ body {
 
 /* SECTIONS */
 section {
-  padding: 100px 10%;
+  padding: 60px 10%;
 }
 
 /* IDENTITY */
@@ -57,11 +57,17 @@ section {
 }
 
 .logo-box img {
-  width: 280px; /* size increased */
+  width: 300px; /* size increased */
   opacity: 0;
   transform: scale(0.3); /* start smaller for stronger zoom */
   transition: transform 1.2s ease, opacity 1.2s ease;
   filter: drop-shadow(0 0 35px rgba(212,175,55,0.45));
+  
+} 
+.logo-box img {
+  width: 280px;
+  border-radius: 18px;
+  box-shadow: 0 0 60px rgba(212, 175, 55, 0.35);
 }
 
 .logo-show img {
@@ -70,7 +76,7 @@ section {
 }
 
 .logo-left img {
-  transform: translateX(-60px) scale(1);
+  transform: translateX(-70px) scale(1.1);
 }
 
 
