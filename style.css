@@ -43,7 +43,7 @@ body {
 
 /* SECTIONS */
 section {
-  padding: 60px 10%;
+  padding: 50px 10%;
 }
 
 /* IDENTITY */
@@ -51,8 +51,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;          /* 👈 pehle 60px tha, ab kam */
-  max-width: 900px;  /* 👈 container ko limit */
+  gap: 20px;          /* 👈 pehle 60px tha, ab kam */
+  max-width: 1000px;  /* 👈 container ko limit */
   margin: 0 auto;    /* 👈 pure section ko center */
 }
 
@@ -81,11 +81,11 @@ section {
 
 
 .text-box {
-  max-width: 380px;
+  max-width: 400px;
 }
 
 .text-box p {
-  margin-bottom: 16px;
+  margin-bottom: 26px;
   opacity: 0.9;
 }
 
