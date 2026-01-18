@@ -1,25 +1,38 @@
-  window.onload = function () {
-    const logoBox = document.querySelector(".logo-box");
-    const paragraphs = document.querySelectorAll(".text-box p");
-  
-    // Step 1: Logo zoom in
-    setTimeout(() => {
-      logoBox.classList.add("logo-show");
-    }, 500);
-  
-    // Step 2: Logo move right → left
-    setTimeout(() => {
-      logoBox.classList.add("logo-left");
-    }, 2000);
-  
-    // Step 3: Paragraphs one by one
-    paragraphs.forEach((para, index) => {
-      setTimeout(() => {
-        para.classList.add("show");
-      }, 2800 + index * 600); // 👈 one by one delay
+const identitySection = document.querySelector(".identity");
+const logoBox = document.querySelector(".logo-box");
+const paragraphs = document.querySelectorAll(".text-box p");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+
+        // Step 1: Logo zoom in (slow)
+        setTimeout(() => {
+          logoBox.classList.add("logo-show");
+        }, 300);
+
+        // Step 2: Logo move slightly left (after visible)
+        setTimeout(() => {
+          logoBox.classList.add("logo-left");
+        }, 1600);
+
+        // Step 3: Paragraphs one by one
+        paragraphs.forEach((para, index) => {
+          setTimeout(() => {
+            para.classList.add("show");
+          }, 2200 + index * 700);
+        });
+
+        observer.unobserve(identitySection); // run only once
+      }
     });
-  };
-  
+  },
+  { threshold: 0.3 }
+);
+
+observer.observe(identitySection);
+
 
   const workCards = document.querySelectorAll(".card");
 
