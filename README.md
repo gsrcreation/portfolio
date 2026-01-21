@@ -69,18 +69,16 @@ cd portfolio
 
 Open index.html in your browser
 (No additional setup required)
-
+                                                          
 Future Improvements
 
 Add detailed project cards directly on the website
 
 Improve accessibility and SEO
 
-Add resume download option
-
 Enhance code readability and structure
 
-Author
+# Author
 
 GSR 
 GitHub: https://github.com/gsrcreation
