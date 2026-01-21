@@ -57,16 +57,13 @@ section {
 }
 
 .logo-box img {
-  width: 300px; /* size increased */
-  opacity: 0;
-  transform: scale(0.3); /* start smaller for stronger zoom */
-  transition: transform 1.2s ease, opacity 1.2s ease;
-  filter: drop-shadow(0 0 35px rgba(212,175,55,0.45));
-  
-} 
-.logo-box img {
   width: 280px;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: all 1.2s ease;
+
   border-radius: 18px;
+  filter: drop-shadow(0 0 35px rgba(212,175,55,0.45));
   box-shadow: 0 0 60px rgba(212, 175, 55, 0.35);
 }
 
@@ -142,19 +139,42 @@ section {
 }
 
 .skills li {
+  position: relative;
+  cursor: default;
+
   padding: 12px 22px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.1);
-  box-shadow: 0 0 15px rgba(212,175,55,0.18);
+
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(212,175,55,0.3);
+
   font-size: 0.9rem;
   white-space: nowrap;
 
-  display: flex;              /* 👈 ADD */
-  align-items: center;        /* 👈 ADD */
-  justify-content: center;    /* 👈 ADD */
-  text-align: center;         /* 👈 ADD */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.8s ease;
 }
 
+/* Visible state */
+.skills li.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Hover effect */
+.skills li:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow:
+    0 0 18px rgba(212,175,55,0.45),
+    0 0 30px rgba(212,175,55,0.25);
+  background: rgba(255,255,255,0.12);
+}
 
 
 
@@ -173,16 +193,7 @@ section {
   
 /* ===== SKILLS ITEM ANIMATION ===== */
 
-.skills li {
-  opacity: 0;
-  transform: translateX(60px);
-  transition: all 0.8s ease;
-}
 
-.skills li.show {
-  opacity: 1;
-  transform: translateX(0);
-}
 .skills {
   text-align: center;
 }
