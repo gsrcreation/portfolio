@@ -629,3 +629,145 @@ section {
 .drive-btn:active {
   transform: translateY(-2px);
 }
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  /* GLOBAL SPACING */
+  section {
+    padding: 40px 6%;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    transform: none;
+  }
+
+  .hero-text.move-left {
+    transform: none;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    margin: 0 auto 22px;
+  }
+
+  /* HERO IMAGE */
+  .profile-wrap img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .name-tag {
+    font-size: 0.8rem;
+    padding: 6px 18px;
+  }
+
+  /* ABOUT */
+  .about p {
+    font-size: 0.95rem;
+  }
+
+  /* IDENTITY SECTION */
+  .identity-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .logo-left img {
+    transform: scale(1.05);
+  }
+
+  .text-box {
+    max-width: 100%;
+  }
+
+  /* WORK */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    transform: translateY(40px);
+  }
+
+  /* SKILLS */
+  .skills ul {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .skills li {
+    font-size: 0.85rem;
+    padding: 10px 18px;
+  }
+
+  /* CONTACT */
+  .contact-icons {
+    gap: 22px;
+  }
+
+  .contact-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  /* MORE WORK */
+  .more-work {
+    padding: 60px 20px;
+  }
+
+  .drive-btn {
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.05rem;
+  }
+
+  .profile-wrap img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .logo-box img {
+    width: 220px;
+  }
+
+  .text-box p {
+    font-size: 0.95rem;
+  }
+}
