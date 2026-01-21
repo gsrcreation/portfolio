@@ -791,3 +791,44 @@ button:focus-visible {
   }
 }
 
+/* ===== CONTACT NOTE ===== */
+
+.contact-note {
+  max-width: 420px;
+  margin: 12px auto 30px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+}
+
+/* ================= CURSOR GLOW ================= */
+
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+
+  background: radial-gradient(
+    circle,
+    rgba(212,175,55,0.18) 0%,
+    rgba(212,175,55,0.08) 30%,
+    rgba(212,175,55,0.02) 55%,
+    transparent 70%
+  );
+
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show only on desktop */
+@media (hover: hover) and (pointer: fine) {
+  .cursor-glow {
+    opacity: 1;
+  }
+}

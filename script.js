@@ -99,3 +99,30 @@ window.addEventListener("load", () => {
   }, 1200);
 });
 
+// ================= CURSOR GLOW =================
+
+const cursorGlow = document.querySelector(".cursor-glow");
+
+if (cursorGlow && window.matchMedia("(hover: hover)").matches) {
+  let mouseX = 0;
+  let mouseY = 0;
+  let currentX = 0;
+  let currentY = 0;
+
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  const animateGlow = () => {
+    currentX += (mouseX - currentX) * 0.08;
+    currentY += (mouseY - currentY) * 0.08;
+
+    cursorGlow.style.left = `${currentX}px`;
+    cursorGlow.style.top = `${currentY}px`;
+
+    requestAnimationFrame(animateGlow);
+  };
+
+  animateGlow();
+}
