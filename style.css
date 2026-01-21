@@ -771,3 +771,23 @@ section {
     font-size: 0.95rem;
   }
 }
+
+/* ================= ACCESSIBILITY: KEYBOARD FOCUS ================= */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* ================= ACCESSIBILITY: REDUCED MOTION ================= */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
